@@ -19,4 +19,14 @@ fun main(){
     println(myArr[0])
     println(myArr[1])
     println(myArr[2])
+
+    var myList = mutableListOf<Int>()
+    myList.add(1)
+    myList.add(2)
+    println(myList[0])
+
+
+    for (i in myList){
+        println(i)
+    }
 }

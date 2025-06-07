@@ -21,6 +21,18 @@ fun main(){
     println(sumAreas(rect1 ,rect2))
 }
 
+enum class Country{
+    GERMANY,FRANCE,US
+}
+
+fun getMe(country: Country): String {
+    return when(country){
+        Country.GERMANY -> "Guten Tag"
+        Country.FRANCE -> "Bonjur"
+        Country.US -> "hello"
+    }
+}
+
 abstract class Shape{
     abstract val area: Float
     abstract val cicumference: Float
